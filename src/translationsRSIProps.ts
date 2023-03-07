@@ -2,9 +2,10 @@ import type { DeepPartial } from "ts-essentials"
 
 export const translations = {
   uploadStep: {
+    shortTitle: "Upload file",
     title: "Upload file",
-    manifestTitle: "Data that we expect:",
-    manifestDescription: "(You will have a chance to rename or remove columns in next steps)",
+    manifestTitle: "Choose a file on your computer that contains a list of contacts to upload to Spruce.",
+    manifestDescription: "",
     maxRecordsExceeded: (maxRecords: string) => `Too many records. Up to ${maxRecords} allowed`,
     dropzone: {
       title: "Upload .xlsx, .xls or .csv file",
@@ -19,11 +20,12 @@ export const translations = {
     },
   },
   selectHeaderStep: {
-    title: "Select header row",
-    nextButtonTitle: "Next",
+    shortTitle: "Find column names",
+    title: "Which row in your file contains the column names?",
   },
   matchColumnsStep: {
-    title: "Match Columns",
+    shortTitle: "Match columns",
+    title: "Match columns",
     nextButtonTitle: "Next",
     userTableTitle: "Your table",
     templateTitle: "Will become",
@@ -36,6 +38,7 @@ export const translations = {
     duplicateColumnWarningDescription: "Columns cannot duplicate",
   },
   validationStep: {
+    shortTitle: "Validate data",
     title: "Validate data",
     nextButtonTitle: "Confirm",
     noRowsMessage: "No data found",
